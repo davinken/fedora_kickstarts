@@ -14,7 +14,7 @@
 # (For larger disks we prefer to have a /export2 separate partition).
 # No RAID considered here.
 
-# 23sep2015/davidr - PARASOL LAB @ TAMU
+# 23sep2015/David Ramirez
 # NOTE: Possible interruptions:
 #           Disk name change from sda to vda (virtual environments)
 #           Network device is no longer eth0, or even em1... crazy.
@@ -78,8 +78,8 @@ echo "    %pre : pre-install component."
 echo "####################################"
 mkdir /ksincludes
 mkdir /ksconfigsrepo
-mount -t nfs -o nolock vega:/export/scratch/linux/ks/fedora/ksincludes /ksincludes
-mount -t nfs -o nolock vega:/export/scratch/linux/ks/fedora/ksconfigsrepo /ksconfigsrepo
+mount -t nfs -o nolock reposerver:/export/linux/ks/fedora/ksincludes /ksincludes
+mount -t nfs -o nolock reposerver:/export/linux/ks/fedora/ksconfigsrepo /ksconfigsrepo
 %end
 
 ## EOF ##
