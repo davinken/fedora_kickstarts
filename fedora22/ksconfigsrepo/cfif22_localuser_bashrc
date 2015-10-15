@@ -8,7 +8,7 @@
 #                 ||----w |
 #                 ||     ||
 # 
-# 2014-12-11 REV. - davidr (for Kickstart distribution)
+# 2014-12-11 REV. - David Ramirez (for Kickstart distribution)
 
 # Source global definitions
 if [ -f /etc/bashrc ]; then
